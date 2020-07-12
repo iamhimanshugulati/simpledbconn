@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Form</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kalam&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Volkhov:ital,wght@1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            background: url("https://1.bp.blogspot.com/-go0KNN-Ogfo/XsFYqbG2DuI/AAAAAAAAA9Q/-CiHyZ7Jwrs8bRry9t-fRWSf-xpA5Tk7wCK4BGAsYHg/d/women-3118387_1920.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: auto;
+
+        }
+
+        .logo {
+            /* border: 2px solid red; */
+            display: inline-block;
+            position: absolute;
+            top: 2px;
+            left: 8px;
+            margin: 0px 0px;
+
+        }
+
+        .logo img {
+            width: 310px;
+        }
+
+        .nav {
+            /* border: 2px solid blue; */
+            display: block;
+            width: 375px;
+            margin: 0px auto;
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-family: 'Ubuntu Condensed', sans-serif;
+            font-size: 25px;
+            font-weight: bolder;
+        }
+
+        .navbar li a {
+            color: hotpink;
+            text-decoration: none;
+            padding: 17px 18px;
+            margin: 0px 5px;
+            background-color: lightblue;
+
+
+        }
+
+        .navbar li a:hover {
+            color: lightpink;
+            background-color: lightslategray;
+            text-decoration: underline;
+
+        }
+
+        .button {
+            /* border: 2px solid green; */
+            display: inline-block;
+            position: absolute;
+            top: 0px;
+            right: 8px;
+            margin: 0px 1px;
+            padding: 1px 3px;
+        }
+
+        .butn {
+            margin: 0px 10px;
+            padding: 6px 5px;
+            /* border: 1px solid black; */
+            border-radius: 10px;
+            cursor: pointer;
+            font-family: 'Ubuntu Condensed', sans-serif;
+            font-size: 25px;
+            font-weight: bolder;
+            color: hotpink;
+            background-color: lightblue;
+
+        }
+
+        .butn:hover {
+            color: lightpink;
+            background-color: lightslategray;
+            text-decoration: underline;
+            border: none;
+        }
+
+        .article {
+            background-color: black;
+            border: 10px ridge darkgray;
+            margin: 50px 87px;
+            padding: 1px 1px;
+            width: 760px;
+            height: 430px;
+            border-radius: 8px;
+
+        }
+
+        .article h1 {
+            text-align: center;
+            color: white;
+            font-family: 'Pangolin', cursive;
+            font-size: 34px;
+
+        }
+
+        .input1 input {
+            text-align: center;
+            display: block;
+            width: 450px;
+            padding: 6px 0px;
+            margin: 10px auto;
+            font-size: 18px;
+            border-radius: 10px;
+            font-family: 'Kalam', cursive;
+        }
+
+        form .butns {
+            text-align: center;
+            display: block;
+            width: 450px;
+            padding: 6px 0px;
+            margin: 20px auto;
+            border-radius: 10px;
+            cursor: pointer;
+            margin-bottom: 2px;
+            font-family: 'Archivo Black', sans-serif;
+            font-size: 22px;
+            background-color: yellowgreen;
+        }
+
+        form .butns:hover {
+            color: white;
+            background-color: black;
+        }
+
+        form .resets {
+            text-align: center;
+            display: block;
+            width: 450px;
+            padding: 6px 0px;
+            margin: 10px auto;
+            border-radius: 10px;
+            cursor: pointer;
+            font-family: 'Archivo Black', sans-serif;
+            font-size: 22px;
+            background-color: crimson;
+        }
+
+        form .resets:hover {
+            color: white;
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="https://tutorialspointhtml.blogspot.com/" target="_blank"><img
+                    src="https://4.bp.blogspot.com/-c37XwcyEMmE/XrlqS7qJKJI/AAAAAAAAG9w/Fx56AQoU9CMolvYz8pAw7alocGj1I6IqwCK4BGAYYCw/s1600/Tutorialspoint%2BLogo%2BWith%2BBlog%2BName-1.png"
+                    alt="Logo"></a>
+
+        </div>
+        <div class="nav">
+            <ul class="navbar">
+                <li><a href="http://www.drinkingcode.tech/mytourzilla/">Project</a></li>
+                <li><a href="https://iamhimanshugulati.github.io/mytourzilla/">Git</a></li>
+                <li><a href="https://github.com/iamhimanshugulati/mytourzilla">GitRep</a></li>
+            </ul>
+        </div>
+        <div class="button">
+            <a href="signin.html"><button class="butn">SignIn</button></a>
+            <a href="signup.html"><button class="butn">SignUp</button></a>
+
+        </div>
+    </header>
+
+    <div class="article">
+
+        <h1>Join the emerging Blog on Web Development now!!</h1>
+        <form action="insert.php" method="POST">
+            <div class="input1">
+                <input type="text" name="full_name" placeholder="Enter your Full Name" required>
+            </div>
+            <div class="input1">
+                <input type="text" name="area_of_interest" placeholder="Enter your Area of Interest" required>
+            </div>
+            <div class="input1">
+                <input type="text" name="Email_id" placeholder="Enter your email address" required>
+            </div>
+            <div class="input1">
+                <input type="number" name="contact_no" placeholder="Enter your Mobile Number" required>
+            </div>
+
+            <button class="butns" type="submit">Submit</button>
+            <button class="resets" type="reset">Reset</button>
+        </form>
+    </div>
+</body>
+
+</html>
